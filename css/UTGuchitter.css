@@ -1,0 +1,157 @@
+li{
+  list-style: none;
+}
+
+
+.header{
+  font-family: monospace;
+  padding: 0.5em 1em;
+   background: -moz-linear-gradient(#ffb03c, #ff708d);
+   background: -webkit-linear-gradient(#ffb03c, #ff708d);
+   background: linear-gradient(to right, #ffb03c, #ff708d);
+   color: #FFF;
+  height: 100px;
+}
+
+  .header-logo{
+    font-family: serif ;
+    color:white;
+    font-size: 36px;
+    text-align: center;
+    padding-top: 20px;
+  }
+  .header-current{
+    float:right;
+    color: white;
+    padding-top: 10px;
+  }
+nav {
+
+    width: 100%;    /*横幅の指定*/
+    height: 40px;
+    border-top: 5px solid orange;   /*上部の線の色を指定*/
+    border-bottom: 1px solid orange;    /*下部の線の色を指定*/
+    margin-bottom: 3px; /**/
+    overflow: hidden;   /*おまじない*/
+  }
+  nav ul{
+    width: 80vw; /*横幅の指定*/
+    margin: 0px;
+  }
+  nav li{
+      width: calc(25% - 2px); /*横幅の指定（線の分をマイナスする）*/
+      border-left: 1px solid orange;  /*線を描く*/
+      text-align: center; /*文字を中央に*/
+      float: left;    /*左から並べる*/
+      margin-bottom: 0px;
+    }
+    nav li:last-child{
+      border-right: 1px solid orange; /*li要素の最後の物は右側に線を描く*/
+  }
+  nav a{
+      display: block; /*1つのli全体にリンクを有効にする*/
+      text-decoration: none;  /*ブラウザ標準のリンク装飾をオフに*/
+      color:#313131;  /*文字色の変更*/
+      font-size: 90%;    /*フォントサイズの指定*/
+      letter-spacing: 5px;    /*文字と文字の間隔をあける*/
+      font-weight: 400;   /*文字の太さを調整*/
+      line-height: 40px;  /*行間の指定（ナビボタンの高さ指定）*/
+  }
+    nav a:hover{
+      background-color: orange;   /*背景色の指定*/
+      color: #fff;    /*文字色の変更*/
+      transition: 0.5s;   /*ホバー時の動きをなめらかにする*/
+  }
+
+.main{
+  max-width:80vw;
+  height: 360px;
+  min-height: auto;
+  background-position: center;
+  background-image: url(https://neurology.georgetown.edu/sites/neurology/files/files/upload/Screen%20Shot%202015-07-21%20at%2011.27.04%20AM.png);
+  zoom:1.5;
+}
+
+.main-message{
+  color: white;
+  font-size: 3vw;
+  padding-top: 160px;
+  text-align: center;
+}
+.contents{
+  margin-top: 100px;
+  height: 800px;
+  font-weight: bold;
+}
+.contents h1{
+  font-size: 60px;
+}
+.section-title {
+  border-bottom: 2px solid #dee7ec;
+  font-size: 28px;
+  padding-bottom: 15px;
+  margin-bottom: 50px;
+}
+
+.contents h4{
+  Font-size:30px;
+  Padding:20px 20px;
+  margin-bottom: 10px;
+}
+
+
+
+
+.contact-form {
+  padding-top: 20px;
+}
+
+/* inputとtextareaのCSSを指定してください */
+input, textarea{
+  width:400px;
+  margin:10px 0px 30px 0px;
+  padding:20px;
+  font-size:18px;
+  border:1px solid #dee7ec;
+}
+
+/* contact-submitのCSSを指定してください */
+.contact-submit{
+  background-color:#dee7ec;
+  color:#889eab;
+}
+
+.footer {
+  background-color: #FFC7AF;
+  color: black;
+  height: 80px;
+  padding: 40px;
+}
+
+.footer-logo {
+  float: left;
+  font-family: serif;
+  font-size: 32px;
+}
+
+.footer-list {
+  float: right;
+}
+
+.footer-list li {
+  padding-bottom: 10px;
+}
+
+footer{
+    font-size: 80%; /*フォントサイズの指定*/
+    width: 100%;    /*横幅の指定*/
+    text-align: center; /*文字の中央寄せ*/
+    padding-top: 10px;  /*文字上部の余白指定*/
+    padding-bottom: 10px;   /*文字下部の余白指定*/
+    background-color: #FF4F02;  /*背景色の指定*/
+}
+  footer small{
+    color: black;    /*文字色の指定*/
+    letter-spacing: 5px;    /*文字と文字の間隔をあける*/
+    font-style: normal; /*文字の斜体を取り消す*/
+}
